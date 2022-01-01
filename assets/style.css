@@ -1,0 +1,281 @@
+/* base */
+
+/* body {
+    background-color: #f1f1f1;
+} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+p {
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 1116px;
+    margin: auto;
+}
+
+/* Variables */
+/* Type */
+.type-normal {
+    color: #a8a878;
+}
+.type-fighting {
+    color: #c03028;
+}
+.type-flying {
+    color: #a890f0;
+}
+.type-poison {
+    color: #a040a0;
+}
+.type-ground {
+    color: #e0c068;
+}
+.type-rock {
+    color: #b8a038;
+}
+.type-bug {
+    color: #a8b820;
+}
+.type-ghost {
+    color: #705898;
+}
+.type-steel {
+    color: #b8b8d0;
+}
+.type-fire {
+    color: #f08030;
+}
+.type-water {
+    color: #6890f0;
+}
+.type-grass {
+    color: #78c850;
+}
+.type-electric {
+    color: #f8d030;
+}
+.type-psychic {
+    color: #f85888;
+}
+.type-ice {
+    color: #98d8d8;
+}
+.type-dragon {
+    color: #7038f8;
+}
+.type-dark {
+    color: #705848;
+}
+.type-fairy {
+    color: #ee99ac;
+}
+
+.gender-m {
+    color: #0070f8;
+}
+.gender-f {
+    color: #e82010;
+}
+
+.attr {
+    color: #a0a0a0;
+}
+
+/* Stat */
+.stat-hp {
+    color: #ff0000;
+}
+.stat-atk {
+    color: #f08030;
+}
+.stat-def {
+    color: #f8d030;
+}
+.stat-spa {
+    color: #6890f0;
+}
+.stat-spd {
+    color: #78c850;
+}
+.stat-spe {
+    color: #f85888;
+}
+
+/* Headers */
+.heading-title {
+    font-weight: 600;
+}
+
+.heading-img img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.introduction {
+    margin: 40px;
+}
+
+/* Main */
+
+/* Sidebar */
+.sidebar {
+    padding-top: 30px;
+    margin-bottom: 60px;
+}
+
+.menu {
+    background-color: white;
+    top: 10px;
+    padding-top: 15px;
+    display: block;
+    width: 200px;
+    position: sticky;
+    float: right;
+}
+
+/* Content */
+.content {
+    padding-top: 30px;
+    margin-bottom: 60px;
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+}
+
+.border-right-before::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    margin-bottom: 200px;
+    background: #78290f;
+}
+
+p img {
+    width: 68px;
+    height: 56px;
+}
+
+/* Pokemon set*/
+/* Image */
+.pkmnImg {
+    position: relative;
+    margin: 15px;
+    width: 115px;
+}
+
+.pkmnImg_sprite {
+    width: 110px;
+    height: 110px;
+}
+
+.pkmnImg_item {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 40px;
+    height: 40px;
+}
+
+/* Set */
+pre {
+    white-space: pre-line;
+}
+
+/* Calcs (accordion-btn) */
+.accordion {
+    /* border: 1px solid black; */
+    margin-bottom: 5px;
+}
+
+.accordion-btn {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.accordion-btn:hover {
+    background-color: #ccc;
+}
+
+.accordion-btn:after {
+    content: "\002B";
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.accordion-content {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Tour run */
+/* Table */
+.tourTable {
+    width: 100%;
+    background-color: #fff;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 0.85em;
+    border: none;
+}
+
+.tourTable thead tr th,
+.tourTable tbody tr td {
+    padding: 4px;
+    text-align: center;
+}
+
+.tourTable thead tr th {
+    background-color: #DA251D;
+    color: white;
+}
+
+.tourTable tbody tr td {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.tourTable tbody tr td p {
+    display: flex;
+    justify-content: center;
+}
+
+/* section divider */
+.divider-separator {
+    border-top: 3px solid black;
+}

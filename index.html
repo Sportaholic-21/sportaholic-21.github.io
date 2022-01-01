@@ -2,471 +2,1047 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>BlockCommerce</title>
-  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon">
-  <!-- Bootstrap , fonts & icons  -->
-  <link rel="stylesheet" href="./css/bootstrap.css">
-  <link rel="stylesheet" href="./fonts/icon-font/css/style.css">
-  <link rel="stylesheet" href="./fonts/typography-font/typo.css">
-  <link rel="stylesheet" href="./fonts/fontawesome-5/css/all.css">
-  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Plugin'stylesheets  -->
-  <link rel="stylesheet" href="./plugins/aos/aos.min.css">
-  <link rel="stylesheet" href="./plugins/slick/slick.min.css">
-  <!-- Vendor stylesheets  -->
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- Custom stylesheet -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link type=”image/x-icon” href='favicon.ico' rel="shortcut icon" />
+    <!--Bootstrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--FontAwesome 5-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!--Jquery 3.6-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <!--Bootstrap 5 script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+    <title>CharZac - New HotDog</title>
 </head>
 
-<body data-theme-mode-panel-active data-theme="light" style="font-family: 'Mazzard H';">
-  <div class="site-wrapper overflow-hidden position-relative">
-    <!-- Site Header -->
-    <!-- Preloader -->
-    <!-- <div id="loading">
-    <div class="preloader">
-     <img src="./image/preloader.gif" alt="preloader">
-   </div>
-   </div>    -->
-    <!--Site Header Area -->
-    <header class="site-header site-header--menu-left landing-11-menu site-header--absolute site-header--sticky">
-      <div class="container">
-        <nav class="navbar site-navbar">
-          <!-- Brand Logo-->
-          <div class="brand-logo">
-            <a href="#">
-              <!-- light version logo (logo must be black)-->
-              <img src="" alt="BlockCommerce" class="light-version-logo">
-              <!-- Dark version logo (logo must be White)-->
-              <img src="" alt="BlockCommerce" class="dark-version-logo">
-            </a>
-          </div>
-          <div class="menu-block-wrapper">
-            <div class="menu-overlay"></div>
-            <nav class="menu-block" id="append-menu-header">
-              <div class="mobile-menu-head">
-                <div class="go-back">
-                  <i class="fa fa-angle-left"></i>
+<body>
+    <div class="container">
+        <section class="header">
+            <h1 class="heading-title">
+                CharZac, The new HotDog - Team Report from the Winner of the
+                Play! Pokémon Vietnam Circuit's Grand Final
+            </h1>
+
+            <div class="heading-author d-flex">
+                <div class="heading-author-name p-2">
+                    <i class="fas fa-pen-alt"></i>
+                    Long Nguyễn
                 </div>
-                <div class="current-menu-title"></div>
-                <div class="mobile-menu-close">&times;</div>
-              </div>
-            </nav>
-          </div>
-          <div class="header-btns  header-btn-l11 ms-auto d-none d-xs-inline-flex align-items-center">
-            <a class="btn log-in-btn focus-reset" href="BlockCommerce.pdf" target="_blank">
-              Documentation
-            </a>
-            <a class="download-trail-btn btn focus-reset" href="#">
-              Download trial
-            </a>
-          </div>
-          <!-- mobile menu trigger -->
-          <div class="mobile-menu-trigger">
-            <span></span>
-          </div>
-          <!--/.Mobile Menu Hamburger Ends-->
-        </nav>
-      </div>
-    </header>
-    <!-- navbar- -->
-    <!-- Hero Area -->
-    <div class="hero-area-l11 position-relative z-index-1 overflow-hidden">
-      <div class="container position-relative">
-        <div class="row position-relative justify-content-center">
-          <div class="col-xl-8 col-lg-9 col-md-12 order-lg-1 order-1" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
-            <div class="content">
-              <h1>BlockCommerce<br class="d-none d-md-block"> built for software.</h1>
-              <div class="row banner-l-11-bottom-content">
-                <div class="col-lg-8 col-md-8 col-sm-10">
-                  <p class="position-relative banner-main-content-l-11">Create custom landing pages with
-                    BlockCommerce that convert more
-                    visitors
-                    than any website—no coding required.
-                    <span class="line-left-content"></span>
-                  </p>
+                <div class="heading-author-date p-2">
+                    <i class="fas fa-calendar-day"></i>
+                    XX/01/2022
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 flex-y-center ">
-                  <a class="btn l-11-hero-btn" href="#">Download free trial</a>
-                </div>
-                <div class="col-xl-3 col-lg-4">
-                  <div class="compitable-text border-top d-inline-block">
-                    <p>Compitable with:</p>
-                    <div class="compatible-icon flex-y-center img-grayscale">
-                      <a href="#" class="font-size-13 mr-7"><img src="./image/l2/windows.svg" alt=""></a>
-                      <!-- <a href="#" class="font-size-13 mr-7"><img src="./image/l2/apple.svg" alt=""></a>
-                      <a href="#" class="font-size-13"><img src="./image/l2/penguine.svg" alt=""></a> -->
+            </div>
+
+            <div class="heading-img">
+                <img src="assets/img/alt_cover_pic.jpg" style="border: 1px solid black">
+            </div>
+
+            <div class="introduction">
+                <p>
+                    Xin chào mọi người, mình là Long Nguyễn, một player VGC Việt Nam từ năm 2020. Trải qua một thời gian
+                    khá dài tham gia các giải đấu trong nước và quốc tế, thì mình đã đạt được một mốc đáng tự hào khi
+                    trở thành Nhà vô địch Grand Final đầu tiên của Play! Pokémon Vietnam Circuit!
+                </p>
+                <p>
+                    Trong bài viết lần này, mình sẽ phân tích team mình đã sử dụng để bước lên đỉnh vinh quang của giải
+                    đấu, đồng thời cũng điểm qua chặng đường thi đấu của mình với kết quả chung cuộc 7 thắng 1 bại.
+                </p>
+            </div>
+
+        </section>
+
+        <hr class="divider-separator">
+        </hr>
+
+        <section class="main_page row">
+            <div class="col-sm-3 sidebar">
+                <aside class="menu">
+                    <ul>
+                        <li><a href="#teambuild">Quá trình build team</a></li>
+                        <li><a href="#theTeam">Giải thích team</a></li>
+                        <li><a href="#commonLeads">Các cách bắt đầu trận</a></li>
+                        <li><a href="#tourRun">Quá trình thi đấu</a></li>
+                        <li><a href="#conclude">Lời kết</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="col-md-9 content border-right-before">
+                <section class="teambuilding">
+                    <h2 id="teambuild">Quá Trình Build Team</h2>
+                    <p>
+                        Sau các thất bại gần nhất của mình ở các giải đấu thuộc Series 8 vì sử dụng các team khá là
+                        off-meta, mình quyết định ở giải này, mình sẽ build một team theo chiều hướng meta, nhưng vẫn
+                        mang chút chất cá nhân của mình.
+                    </p>
+                    <p>
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                        <img src="assets/img/incineroar.png" alt="Incineroar">
+                        <img src="assets/img/venusaur.png" alt="Venusaur">
+                        <img src="assets/img/regieleki.png" alt="Regieleki">
+                        <img src="assets/img/sableye.png" alt="Sableye">
+                        <img src="assets/img/charizard.png" alt="Charizard">
+                    </p>
+                    <p>
+                        Với việc Players Cup Global Exhibition cũng vừa khép lại một khoảng thời gian không lâu, nên
+                        việc tìm kiếm nguồn cảm hứng cũng khá dễ dàng. Mình quyết định lấy team của Wonseok Jung – á
+                        quân Global Exhibition làm gốc để build team.
+                    </p>
+                    <p>
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                        <img src="assets/img/charizard.png" alt="Charizard">
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                    </p>
+                    <p>
+                        Mình rất thích thú với việc sử dụng cặp đôi Zacian – Charizard vì khả năng ép sân đối thủ cực kỳ
+                        tốt với Behemoth Blade & G-Max Wildfire và Charizard còn có thể bổ trợ cho Zacian với Max
+                        Airstream. Thay vì Sableye để gọi nắng, mình quyết định lựa chọn Whimsicott bởi vì cảm giác sử
+                        dụng đa dạng hơn Sableye.
+                    </p>
+                    <p>
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                        <img src="assets/img/charizard.png" alt="Charizard">
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                        <img src="assets/img/regieleki.png" alt="Regieleki">
+                        <img src="assets/img/rillaboom.png" alt="Rillaboom">
+                    </p>
+                    <p>
+                        Ngay lập tức vấn đề hiện ra là match-up với Kyogre khá khổ sở, vì thế theo lẽ tự nhiên, mình lựa
+                        chọn ngay hai con counter chính với Kyogre là Regieleki và Rillaboom. Rillaboom mang lại áp lực
+                        Fake Out cùng với khả năng dọn dẹp với Grassy Glide, trong khi Regieleki giúp kiểm soát tốc độ
+                        với Electroweb và là một ứng cử viên Dynamax khác khi cần.
+                    </p>
+                    <p>
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                        <img src="assets/img/charizard.png" alt="Charizard">
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                        <img src="assets/img/regieleki.png" alt="Regieleki">
+                        <img src="assets/img/rillaboom.png" alt="Rillaboom">
+                        <img src="assets/img/landorus-therian.png" alt="Landorus-T">
+                    </p>
+                    <p>
+                        Ở slot cuối cùng, ban đầu mình thử với Landorus-Therian. Tuy nhiên trong quá trình thử, mình
+                        nhận thấy nó khá là không phù hợp với team vì khả năng tấn công ngoài Dynamax của nó khá phản
+                        team trong khi đó việc Dynamax gần như hoàn toàn nhường cho Charizard. Bên cạnh đó, mình nhận
+                        thấy team khá yếu với các team comp có cả Rotom-H lẫn Landorus-T của đối phương. Vì vậy, slot
+                        cuối này mình cần một Pokémon có thể gây áp lực tới cả hai Pokémon kể trên, đồng thời vẫn có thể
+                        hoạt động tốt mà không cần Dynamax. Sau một khoảng thời gian phân vân, cuối cùng mình lựa chọn
+                        Urshifu-Rapid-Strike. Nó cho phép mình giải quyết vấn đề trên và hoàn thành core tam giác Fire -
+                        Water - Grass. Và cuối cùng mình đã có 6 Pokémon ưng ý của mình.
+                    </p>
+                    <p>
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                        <img src="assets/img/charizard.png" alt="Charizard">
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                        <img src="assets/img/regieleki.png" alt="Regieleki">
+                        <img src="assets/img/rillaboom.png" alt="Rillaboom">
+                        <img src="assets/img/urshifu.png" alt="Urshifu-R">
+                    </p>
+                    <p>
+                        Với việc lựa chọn Pokémon được hoàn thành, việc tiếp theo sẽ là quyết định Moveset và Item cho
+                        team. Mình sẽ đi sâu về chi tiết từng thành viên trong team ở phần tiếp theo.
+                    </p>
+                </section>
+
+                <hr class="divider-separator">
+                </hr>
+
+                <section class="team">
+                    <h2 id="theTeam">Giải Thích Team</h2>
+
+                    <!-- Whimsicott -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/whimsicott_image.png" alt="Whimsicott" class="pkmnImg_sprite">
+                            <img src="assets/img/eject-button.png" alt="Eject Button" class="pkmnImg_item">
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-grass">Whimsicott</span> (<span class="gender-f">F</span>) @ Eject Button  
+                            <span class="attr">Ability: </span>Prankster  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+                            Timid Nature  
+                            <span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+                            <span class="type-fairy">-</span> Moonblast  
+                            <span class="type-fire">-</span> Sunny Day  
+                            <span class="type-flying">-</span> Tailwind  
+                            <span class="type-dark">-</span> Switcheroo  
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Whimsicott là một mắt xích tối quan trọng trong team với khả năng điều tiết nhịp độ trận
+                                đấu. Prankster Tailwind của Whimsicott giúp kiểm soát tốc độ cực kỳ hiệu quả, trong khi
+                                Sunny Day tạo nắng giúp Charizard gây damage mạnh nhất có thể. Moonblast là đòn tấn công
+                                duy nhất của Whimsicott.
+                            </p>
+                            <p>
+                                Để tối ưu khả năng Dynamax của team, Whimsicott này được build theo lối chiến thuật
+                                TrickEject với Item Eject Button & đòn Switcheroo để gây áp lực loại bỏ ngay các đối thủ
+                                Dynamax cùng thời điểm với Charizard của mình.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252 SpA Whimsicott Moonblast vs. 4 HP / 0 SpD Urshifu-Rapid-Strike: 174-206 (98.8 -
+                                    117%) -- 93.8% chance to OHKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-9 order-lg-1 order-0" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <img src="image/l2/blockCommerceCode.png" alt="" class="w-100 hero-l11-main-image">
-          </div>
-        </div>
-      </div>
-      <div class="hero-shape-l11-1 d-none d-md-block">
-        <img src="./image/l2/hero-shape-1.svg" alt="">
-      </div>
-      <div class="hero-shape-l11-2 d-none d-md-block">
-        <img src="./image/l2/hero-shape-2.png" alt="">
-      </div>
-    </div>
-    <!-- Brand-area -->
-    <!-- Content Area-1 -->
-    <div class="content-area-l-11-1">
-      <div class="container">
-        <div class="row align-items-center justify-content-lg-start justify-content-center">
-          <div class="col-xl-6 col-md-5 col-md-10" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-            <div class="content-img position-relative z-index-1">
-              <img src="image/l2/content-img1.png" alt="" class="w-100">
-            </div>
-          </div>
-          <div class="offset-xxl-1 col-xxl-5 col-xl-6 col-lg-7 col-md-9" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-            <div class="content section-heading-5">
-              <h2>
-                Build Beautiful Landing Pages Faster.
-              </h2>
-              <p>Create custom landing pages with BlockCommerce that convert more visitors than any website, no coding
-                required.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area-2  -->
-    <div class="content-area-l-11-2">
-      <div class="container">
-        <div class="row align-items-center justify-content-lg-between justify-content-center">
-          <div class="col-xxl-4 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-            <div class="content section-heading-5">
-              <h2>
-                Completely Free for Everyone.
-              </h2>
-              <div class="d-flex content-l-11-3-card">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="27" viewBox="0 0 32 27">
-                  <g>
-                    <g>
-                      <g>
-                        <path class="mypath1" fill="none" stroke="#258aff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M25.528 25.615v0h5.47v0-5.911c0-.56-.341-1.062-.86-1.27l-5.118-2.05a1.367 1.367 0 0 1-.86-1.267v-1.2a5.445 5.445 0 0 0 2.735-4.711V6.471a5.47 5.47 0 0 0-8.205-4.738">
-                        </path>
-                      </g>
-                      <g>
-                        <path class="mypath1" fill="none" stroke="#258aff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="20" stroke-width="2" d="M19.367 19.846l-5.14-2.036a1.358 1.358 0 0 1-.864-1.257v-1.192a5.394 5.394 0 0 0 2.747-4.676V7.97c0-2.999-2.46-5.43-5.495-5.43-3.034 0-5.494 2.431-5.494 5.43v2.715a5.394 5.394 0 0 0 2.747 4.676v1.192c0 .555-.342 1.054-.864 1.26l-5.14 2.036c-.52.206-.863.703-.864 1.257v4.51h19.23v0-4.51c0-.555-.342-1.054-.863-1.26z">
-                        </path>
-                      </g>
-                    </g>
-                  </g>
-                </svg>
-                <div class="content-body">
-                  <h5>Easy setup process</h5>
-                  <p>Editing and customizing Essential Landing is easy and fast.</p>
-                </div>
-              </div>
-              <div class="d-flex content-l-11-3-card">
-                <img src="image/l2/settings.svg" alt="icon">
-                <div class="content-body">
-                  <h5>Built for real users</h5>
-                  <p>Editing and customizing Essential Landing is easy and fast.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xxl-6 offset-xxl-2 col-xl-6 col-lg-5 col-md-9 order-lg-1 order-0" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-            <div class="content-img">
-              <img src="image/l2/content-img2.png" alt="" class="w-lg-auto w-100">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Content Area -->
-    <div class="content-area-l-11-3 position-relative">
-      <div class="container">
-        <div class="row align-items-center justify-content-center justify-content-lg-start">
-          <div class="col-xl-6 col-lg-6 col-md-8 order-lg-1 order-0" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
-            <div class="content-img">
-              <img src="image/l2/content-img3.png" alt="" class="w-100">
-            </div>
-          </div>
-          <div class="offset-xl-1 col-xl-5 col-lg-6 col-md-9 order-lg-1 order-1" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-            <div class="content section-heading-5">
-              <h2>Completely Free for Everyone.</h2>
-              <p>Event is not like most tech conferences. We want our presentations to engage the audience, spark
-                discussion and inspire new ideas. </p>
-              <ul class="list-unstyled pl-0">
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Unlimited design possibility
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Completely responsive
-                </li>
-                <li class="d-flex align-items-center">
-                  <i class="fas fa-check"></i>Easy to customize
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Feature Area -->
-    <div class="feature-l-11">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-9 px-lg-12 col-md-12">
-            <div class="row justify-content-center">
-              <div class="col-lg-10 text-center">
-                <div class="section-heading-5">
-                  <h2>
-                    One Software, Every Solution
-                  </h2>
-                  <p>We designed and tested prototypes that helped identify pain points in the account
-                    creation process. Together, we shaped the new standard.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row feature-l-11-items justify-content-center">
-              <div class="col-md-6" data-aos="fade-right" data-aos-duration="800" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-pen-01"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>Easy to Use</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-left" data-aos-duration="800" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-layers-3"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>300+ Blocks</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-office"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>100% Responsive</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-book-open-2"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>Rich Documentation</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-pen-01"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>50+ Ready Pages</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
-                <div class="d-flex ">
-                  <div class="icon-box">
-                    <i class="icon icon-settings-gear-64-2"></i>
-                  </div>
-                  <div class="content-body">
-                    <h5>Quick Setup</h5>
-                    <p>Whether it’s a small internal app or a new for millions of customers, our design and
-                      development teams.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial Section -->
-    <div class="testimonial-area-l-11">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-xl-7 col-lg-9" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
-            <div class="section-heading-5 text-center">
-              <h2>
-                30,000+ Customers Trust Us
-              </h2>
-              <p>We designed and tested prototypes that helped
-                identify pain points in the account creation process. Together, we shaped the new standard.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-          <div class="col-xl-10 col-lg-12 col-md-10">
-            <div class="testimonial-slider-l-11 position-relative">
-              <div class="single-slide focus-reset">
-                <div class="testimonial-card">
-                  <p>
-                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
-                    so much faster
-                    and easier to work with than my old site. I just choose the page, make the change and
-                    click save. Thanks, guys!”
-                  </p>
-                  <div class="d-flex user-details align-items-center">
-                    <div class="customer-img">
-                      <img src="image/l2/client-img-2.png" alt="">
+
+                    <hr />
+
+                    <!-- Charizard -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/charizard-gigantamax_image.png" alt="Charizard-Gmax"
+                                class="pkmnImg_sprite">
+                            <img src="assets/img/life-orb.png" alt="Life Orb" class="pkmnImg_item">
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-fire">Charizard-Gmax</span> (<span class="gender-m">M</span>) @ Life Orb  
+                            <span class="attr">Ability: </span>Solar Power  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+                            Timid Nature  
+                            <span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+                            <span class="type-fire">-</span> Blast Burn  
+                            <span class="type-fire">-</span> Heat Wave  
+                            <span class="type-flying">-</span> Hurricane  
+                            <span class="type-normal">-</span> Protect 
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Charizard là Pokémon Dynamax (đúng hơn là Gigantamax) chính trong team. Với G-Max
+                                Wildfire đặc biệt cộng thêm nắng từ Whimsicott, Charizard có thể thiêu rụi bất cứ đối
+                                thủ nào trong một nốt nhạc. Không chỉ thế, Max Airstream có thể đẩy tốc độ của chính bản
+                                thân cùng đồng đội nó lên một bậc. Một trong những mục tiêu chính của team là tìm cách
+                                đưa Zacian vào kế bên Charizard đang Snowball trong trạng thái G-Max.
+                            </p>
+                            <p>
+                                Với việc gần như luôn luôn G-Max Charizard, mình lựa chọn hai STAB gây damage lớn nhất
+                                là Blast Burn và Hurricane để lần lượt sản xuất ra các đòn G-Max Wildfire 150 BP & Max
+                                Airstream 140 BP, cùng với Life Orb là item để giúp Charizard này gây damage nhiều nhất
+                                có thể. Protect cần thiết để bảo vệ Charizard và để có thể chọn vị trí cho các turn tiếp
+                                theo. Heat Wave là đòn STAB Fire thứ hai đơn giản để mình có thứ gì đó để sử dụng cho
+                                các trường hợp Charizard không thể G-Max được.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252 SpA Life Orb Solar Power Charizard G-Max Wildfire (Blast Burn) vs. 212 HP / 4
+                                    SpD Dynamax Landorus-Therian in Sun: 394-464 (103.1 - 121.4%) -- guaranteed OHKO
+                                </p>
+                                <p>
+                                    252 SpA Life Orb Solar Power Charizard G-Max Wildfire (Blast Burn) vs. 236 HP / 4
+                                    SpD Dynamax Groudon in Sun: 359-422 (87.5 - 102.9%) -- 18.8% chance to OHKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-identity">
-                      <h5>Mai Nguyen Duc Tho</h5>
-                      <span>Founder of BlockCommerce</span>
+
+                    <hr />
+
+                    <!-- Zacian -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/zacian-crowned_image.png" alt="Zacian" class="pkmnImg_sprite">
+                            <!-- <img src="" alt="" class="pkmnImg_item"> -->
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-fairy">Zacian-Crowned</span> @ Rusted Sword  
+                            <span class="attr">Ability: </span>Intrepid Sword  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-hp">252 HP</span> / <span class="stat-atk">76 Atk</span> / <span class="stat-def">4 Def</span> / <span class="stat-spd">12 SpD</span> / <span class="stat-spe">164 Spe</span>  
+                            Adamant Nature  
+                            <span class="type-steel">-</span> Behemoth Blade  
+                            <span class="type-fighting">-</span> Sacred Sword  
+                            <span class="type-normal">-</span> Substitute  
+                            <span class="type-normal">-</span> Protect 
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Đây là một Zacian khá cơ bản trong metagame hiện tại. Tuy nhiên những gì mà nó mang lại
+                                cho team là cực kỳ quan trọng.
+                            </p>
+                            <p>
+                                Zacian có thể trừng trị bất kỳ Pokémon nào, đặc biệt khi đối phương dám Dynamax trước
+                                mặt Zacian với Behemoth Blade. Sacred Sword được sử dụng làm coverage move cần thiết cho
+                                Zacian. Substitute và Protect là hai công cụ Zacian thường dùng cho các turn phòng thủ,
+                                giúp Zacian đạt được vị trí cần thiết ở các turn đấu tiếp theo.
+                            </p>
+                            <p>
+                                EV ở đây mình đổ vào 164 EVs vào Spe để giúp Zacian đạt được chỉ số Spe là 189, vừa đủ
+                                để outspeed Cinderace (188) một điểm. 76+ Atk là stat bump đầu tiên của Adamant Zacian,
+                                giúp nó nhảy từ 218 lên 220 Atk, khoảng cách này đặc biệt quan trọng hơn với Intrepid
+                                Sword giúp Zacian được tăng một bậc Atk mỗi khi được bước vào sàn đấu. Phần còn lại được
+                                đổ đầy vào HP và chia ra giữa Def và Sp.Def.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    +1 76+ Atk Zacian-Crowned Behemoth Blade vs. 4 HP / 0 Def Dynamax Calyrex-Shadow:
+                                    372-440 (105.6 - 125%) -- guaranteed OHKO
+                                </p>
+                                <p>
+                                    +1 76+ Atk Zacian-Crowned Behemoth Blade vs. 108 HP / 0 Def Dynamax Venusaur:
+                                    360-426 (106.5 - 126%) -- guaranteed OHKO
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán thủ</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252+ SpA Magnet Transistor Regieleki Max Lightning (Thunderbolt) vs. 252 HP / 12 SpD
+                                    Zacian-Crowned: 160-190 (80.4 - 95.4%) -- guaranteed 2HKO
+                                </p>
+                                <p>
+                                    4 Atk Incineroar Flare Blitz vs. 252 HP / 4 Def Zacian-Crowned: 134-162 (67.3 -
+                                    81.4%) -- guaranteed 2HKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="single-slide focus-reset">
-                <div class="testimonial-card">
-                  <p>
-                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
-                    so much faster
-                    and easier to work with than my old site. I just choose the page, make the change and
-                    click save. Thanks, guys!”
-                  </p>
-                  <div class="d-flex user-details  align-items-center">
-                    <div class="customer-img">
-                      <img src="image/l2/client-img-1.png" alt="">
+
+                    <hr />
+
+                    <!-- Regieleki -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/regieleki_image.png" alt="Regieleki" class="pkmnImg_sprite">
+                            <img src="assets/img/magnet.png" alt="Magnet" class="pkmnImg_item">
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-electric">Regieleki</span> @ <span class="type-electric">Magnet</span>  
+                            <span class="attr">Ability: </span>Transistor  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-spa">252 SpA</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+                            Modest Nature  
+                            <span class="attr">IVs: </span><span class="stat-atk">0 Atk</span>  
+                            - Rising Voltage  
+                            <span class="type-electric">-</span> Electroweb  
+                            <span class="type-electric">-</span> Volt Switch  
+                            <span class="type-normal">-</span> Protect  
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Regieleki kiêm hai vai trò hỗ trợ kiểm soát tốc độ với Whimsicott bằng Electroweb, đồng
+                                thời cũng có thể làm Max Mon nếu điều kiện cho phép. Volt Switch cũng cho phép Regieleki
+                                trở thành một pivot nhanh, tạo điều kiện setup vị trí tốt cho team. Rising Voltage được
+                                chọn thay vì Thunderbolt để giúp cho Regieleki có thể spam Max Lightning 140 BP, đồng
+                                thời vẫn giữ được sát thương trên khi hết Dynamax.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252+ SpA Magnet Transistor Regieleki Max Lightning (Rising Voltage) vs. 236 HP /
+                                    100+ SpD Incineroar: 175-207 (87.5 - 103.5%) -- 18.8% chance to OHKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-identity">
-                      <h5>Truong Thi Y Lan</h5>
-                      <span>Founder of BlockCommerce</span>
+
+                    <hr />
+
+                    <!-- Rillaboom -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/rillaboom-gmax_image.png" alt="Rillaboom-Gmax" class="pkmnImg_sprite">
+                            <img src="assets/img/assault-vest.png" alt="Assault Vest" class="pkmnImg_item">
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-grass">Rillaboom-Gmax</span> (<span class="gender-m">M</span>) @ Assault Vest  
+                            <span class="attr">Ability: </span>Grassy Surge  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-hp">132 HP</span> / <span class="stat-atk">252 Atk</span> / <span class="stat-def">36 Def</span> / <span class="stat-spd">76 SpD</span> / <span class="stat-spe">12 Spe</span>
+                            Adamant Nature  
+                            - Grassy Glide  
+                            <span class="type-bug">-</span> U-turn  
+                            <span class="type-normal">-</span> Fake Out  
+                            <span class="type-dark">-</span> Knock Off  
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Đây là set Rillaboom mình đã sử dụng suốt Series 10 và kì World Cup of Pokémon.
+                                Rillaboom này được tối ưu hoá HP cho việc hồi máu trong Grassy Terrain. 76 Sp.Def giúp
+                                Rillaboom đạt đúng chỉ số 100 Sp.Def, cùng với Assault Vest giúp Rillaboom tăng cường
+                                đáng kể khả năng chống chịu các đòn đánh Special. Phần còn lại mình chia vào Speed để có
+                                thể outspeed một số Rillaboom, và Def.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252+ Atk Rillaboom Grassy Glide vs. 4 HP / 0 Def Kyogre in Grassy Terrain: 182-216
+                                    (103.4 - 122.7%) -- guaranteed OHKO
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán thủ</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    252 SpA Life Orb Calyrex-Shadow Astral Barrage vs. 132 HP / 76 SpD Assault Vest
+                                    Rillaboom: 95-113 (49.4 - 58.8%) -- 67.6% chance to 2HKO after Grassy Terrain
+                                    recovery
+                                </p>
+                                <p>
+                                    252 SpA Tornadus Hurricane vs. 132 HP / 76 SpD Assault Vest Rillaboom: 150-176 (78.1
+                                    - 91.6%) -- guaranteed 2HKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="single-slide focus-reset">
-                <div class="testimonial-card rounded">
-                  <p>
-                    <span class="d-inline-block quote-size-1">“</span> You made it so simple. My new site is
-                    so much faster
-                    and easier to work with than my old site. I just choose the page, make the change and
-                    click save. Thanks, guys!”
-                  </p>
-                  <div class="d-flex user-details  align-items-center">
-                    <div class="customer-img">
-                      <img src="image/l2/client-img-2.png" alt="">
+
+                    <hr />
+
+                    <!-- Urshifu-RS -->
+                    <div class="pokemon">
+                        <p class="pkmnImg">
+                            <img src="assets/img/urshifu-rs-gmax_image.png" alt="Urshifu-RS-Gmax"
+                                class="pkmnImg_sprite">
+                            <img src="assets/img/focus-sash.png" alt="Focus Sash" class="pkmnImg_item">
+                        </p>
+                        <pre class="pkmnSet">
+                            <span class="type-fighting">Urshifu-Rapid-Strike-Gmax</span> (<span class="gender-m">M</span>) @ Focus Sash  
+                            <span class="attr">Ability: </span>Unseen Fist  
+                            <span class="attr">Level: </span>50  
+                            <span class="attr">EVs: </span><span class="stat-atk">252 Atk</span> / <span class="stat-spd">4 SpD</span> / <span class="stat-spe">252 Spe</span>  
+                            Jolly Nature  
+                            - Surging Strikes  
+                            <span class="type-water">-</span> Aqua Jet  
+                            <span class="type-fighting">-</span> Close Combat  
+                            <span class="type-fighting">-</span> Detect                              
+                        </pre>
+                        <div class="pkmnExplain">
+                            <p>
+                                Urshifu-R đóng vai trò là cleaner / opener của team tuỳ thuộc vào từng set đấu. Nó có
+                                thể gây áp lực đầu game lên những Landorus, Rotom-H, Incineroar. Nó có thể ở phía sau
+                                chờ đợi cơ hội và dọn dẹp những gì còn sót lại sau thời gian chinh phạt của Charizard và
+                                Zacian. Nó còn có thể được sử dụng làm switch-in cho những đòn hệ Fire định nhắm đến
+                                Zacian / Whimsicott / Rillaboom.
+                            </p>
+                        </div>
+                        <div class="accordion">
+                            <button class="accordion-btn">Tính toán công</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    -1 252 Atk Urshifu-Rapid-Strike Surging Strikes (3 hits) vs. 36 HP / 4 Def Dynamax
+                                    Landorus-Therian on a critical hit: 222-270 (65.6 - 79.8%) -- guaranteed 2HKO
+                                </p>
+                                <p>
+                                    252 Atk Urshifu-Rapid-Strike Surging Strikes (3 hits) vs. 252 HP / 0 Def Dynamax
+                                    Rotom-Heat on a critical hit: 186-222 (59.2 - 70.7%) -- guaranteed 2HKO
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="user-identity">
-                      <h5>Sallie Lawson</h5>
-                      <span>Founder of Crips</span>
+                </section>
+
+                <hr class="divider-separator">
+                </hr>
+
+                <section class="lead">
+                    <h2 id="commonLeads">Các Cách Bắt Đầu Trận</h2>
+                    <p>
+                        Về cơ bản, team có khá nhiều cách chơi khác nhau mà bạn có thể dùng theo lối chơi của bản thân.
+                        Ở đây mình sẽ điểm qua một số cách lead team mà mình thường dùng để mở đầu các game tuỳ theo
+                        cách chơi:
+                    </p>
+                    <p>
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott"> +
+                        <img src="assets/img/zacian-crowned.png" alt="Zacian-C"> /
+                        <img src="assets/img/charizard.png" alt="Charizard"> Gây áp lực & snowball ngay đầu trận
+
+                    </p>
+                    <p>
+                        <img src="assets/img/whimsicott.png" alt="Whimsicott"> +
+                        <img src="assets/img/regieleki.png" alt="Regieleki"> Kiểm soát tốc độ sàn đấu một cách triệt để
+                    </p>
+                    <p>
+                        <img src="assets/img/rillaboom.png" alt="Rillaboom"> +
+                        <img src="assets/img/urshifu.png" alt="Urshifu-R"> Rillaboom + Urshifu
+                    </p>
+                </section>
+
+                <hr class="divider-separator">
+                </hr>
+
+                <section class="tour">
+                    <h2 id="tourRun">Quá Trình Thi Đấu</h2>
+                    <p>Mình sẽ kể lại một số chi tiết trong các trận đấu của mình tại giải!</p>
+
+                    <h3 class="">Nhánh Thắng</h3>
+                    <!-- W1 vs Nguyên -->
+                    <div class="round">
+
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>W1</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Nguyên Bùi <br />
+                                        (VVVV)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/lunala.png" alt="Lunala">
+                                            <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                                            <img src="assets/img/zapdos-galar.png" alt="Zapdos-G">
+                                            <img src="assets/img/zoroark.png" alt="Zoroark">
+                                            <img src="assets/img/shedinja.png" alt="Shedinja">
+                                            <img src="assets/img/urshifu.png" alt="Urshifu-S">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="accordion">
+                            <button class="accordion-btn">Tổng thuật</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Ban đầu mình khá lo sợ với Lunala và Meteor Beam. Tuy nhiên với việc Nguyên không
+                                    lead Lunala cả hai game, mình chỉ việc G-Max Charizard và sweep.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </div>
+
+                    <hr />
+
+                    <!-- W2 vs Lonk -->
+                    <div class="round">
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>W2</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Gia Long <br />
+                                        (Glenn)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/calyrex-shadow-rider.png" alt="Calyrex-S">
+                                            <img src="assets/img/weezing.png" alt="Weezing-K">
+                                            <img src="assets/img/regigigas.png" alt="Regigigas">
+                                            <img src="assets/img/thundurus.png" alt="Thundurus-I">
+                                            <img src="assets/img/rillaboom.png" alt="Rillaboom">
+                                            <img src="assets/img/urshifu.png" alt="Urshifu-S">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="accordion">
+                            <button class="accordion-btn">Tổng thuật</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Đây là một Match-Up mà nếu mình kiểm soát tốt tốc độ thì khả năng chiến thắng sẽ rất
+                                    cao, và mình đã làm được qua cả hai game, luôn đặt các Sweeper team bạn vào thế thua
+                                    thiệt với cả Charizard với Zacian ít nhất một bậc tốc độ.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- W3 vs Kuro -->
+                    <div class="round">
+
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>W3</td>
+                                    <td>WLL</td>
+                                    <td>
+                                        Đồng Minh <br />
+                                        (Nhiên Hina)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/yveltal.png" alt="Yveltal">
+                                            <img src="assets/img/torkoal.png" alt="Torkoal">
+                                            <img src="assets/img/venusaur-gmax.png" alt="Venusaur-GMax">
+                                            <img src="assets/img/incineroar.png" alt="Incineroar">
+                                            <img src="assets/img/grimmsnarl.png" alt="Grimmsnarl">
+                                            <img src="assets/img/landorus-therian.png" alt="Landorus-T">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- preview -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Suy nghĩ trước trận</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Mình khá sợ Match-Up này vì khả năng kiểm soát nhịp độ và hạn chế Zacian của cả
+                                    team. Ưu tiên đặt ra là không cho Landorus DMax và hạn chế TWave đến từ Grimmsnarl.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- G1 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 1</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Mình lead Whimsicott + Charizard vs Yveltal vs Grimmsnarl. Một lối đánh thụ động đến
+                                    từ cả hai bên. G1 ngã mũ khoảnh khắc mà mình được free Substitute với Zacian.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- G2 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 2</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Nắm giữ tâm thế Subs Zacian = win, mình quyết định lead Whimsicott + Zacian, tuy
+                                    nhiên đã bị bắt bài với việc Đồng Minh lead Landorus + Grimmsnarl & bắt bài turn 1
+                                    của mình. Khá khó để mình lấy lại nhịp độ trận đấu sau đó và mình đã thất bại.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- G3 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 3</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Mình muốn counter lead G2 của Đồng Minh bằng Rillaboom và Urshifu, nhưng một lần nữa
+                                    bị out-lead với cặp nắng Torkoal + Venusaur. Không có Whimsicott = không speed
+                                    control và nó khiến mình mất luôn G3 và set đấu này.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <h3 class="">Nhánh Thua</h3>
+                    <!-- L4 vs funyy -->
+                    <div class="round">
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L4</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Thịnh Phan <br />
+                                        (funyy)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/groudon.png" alt="Groudon">
+                                            <img src="assets/img/venusaur-gmax.png" alt="Venusaur-GMax">
+                                            <img src="assets/img/incineroar.png" alt="Incineroar">
+                                            <img src="assets/img/dragonite.png" alt="Dragonite">
+                                            <img src="assets/img/whimsicott.png" alt="Whimsicott">
+                                            <img src="assets/img/regieleki.png" alt="Regieleki">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- preview -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Suy nghĩ trước trận</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Nhiệm vụ chính khi bước vào team preview, là tạo điều kiện cho Zacian snowball
+                                    endgame, loại bỏ Incineroar và có lợi thế về tốc độ.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- G1 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 1</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Lead Whimsicott + Regieleki vs Incineroar & Dragonite. Nhận ra lối đánh có phần thụ
+                                    động của Thịnh nên mình đã chủ động chọn vị trí ngay cho Zacian và xử lý thành công
+                                    Incineroar. Với việc Thịnh chọn D-Max Groudon trong khoảng thời gian Zacian còn nằm
+                                    trong Substitute, và vì thế đánh mất nhịp độ trận đấu, mình đã lấy được G1.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- G2 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 2</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Quyết định gây áp lực ngay với Whimsicott + Charizard. Quyết định DMax Dragonite của
+                                    Thịnh có phần làm mình bất ngờ. Nhưng may mắn với việc Dragonite của Thịnh được
+                                    build không có tốc cộng với một pha Crit đúng thời điểm của Zacian mà mình nhanh
+                                    chóng lấy luôn Game 2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- L5 vs Akr0 -->
+                    <div class="round">
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>L5</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Đức Nguyễn <br />
+                                        (Akr0)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/zacian-crowned.png" alt="Zacian-C">
+                                            <img src="assets/img/lapras-gigantamax.png" alt="Lapras-GMax">
+                                            <img src="assets/img/regieleki.png" alt="Regieleki">
+                                            <img src="assets/img/landorus-therian.png" alt="Landorous-T">
+                                            <img src="assets/img/urshifu.png" alt="Urshifu-S">
+                                            <img src="assets/img/porygon2.png" alt="Porygon2">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="accordion">
+                            <button class="accordion-btn">Tổng thuật</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Đây là một Match-Up khá tệ cho Đức vì Whimsicott Charizard gần như phá huỷ nguyên
+                                    đội hình của bạn. Và thực tế xảy ra đúng như vậy khi cặp đôi trên kết thúc cả hai
+                                    trận chỉ trong vòng vài turn đấu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- Loser's Final vs Kuro -->
+                    <div class="round">
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Loser's<br />Final</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Đồng Minh <br />
+                                        (Nhiên Hina)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/yveltal.png" alt="Yveltal">
+                                            <img src="assets/img/torkoal.png" alt="Torkoal">
+                                            <img src="assets/img/venusaur-gmax.png" alt="Venusaur-GMax">
+                                            <img src="assets/img/incineroar.png" alt="Incineroar">
+                                            <img src="assets/img/grimmsnarl.png" alt="Grimmsnarl">
+                                            <img src="assets/img/landorus-therian.png" alt="Landorus-T">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="accordion">
+                            <button class="accordion-btn">Tổng thuật</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Ở lần gặp lại Đồng Minh, lại không có gì quá đặc biệt để giải thích ngoại trừ việc
+                                    mình đã quá may mắn ở cả hai game đấu với hai pha Crit lần lượt vào Landorus-T ở G1
+                                    & Grimmsnarl ở G2.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <h3 class="">Chung Kết Tổng</h3>
+                    <!-- Grand Final vs Ken -->
+                    <div class="round">
+
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grand Final</td>
+                                    <td>WW</td>
+                                    <td>
+                                        Đạt Lương <br />
+                                        (Ken)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/calyrex-ice-rider.png" alt="Calyrex-I">
+                                            <img src="assets/img/mimikyu.png" alt="Mimikyu">
+                                            <img src="assets/img/regieleki.png" alt="Regieleki">
+                                            <img src="assets/img/indeedee-female.png" alt="Indeedee-F">
+                                            <img src="assets/img/trevenant.png" alt="Trevenant">
+                                            <img src="assets/img/torkoal.png" alt="Torkoal">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- preview -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Suy nghĩ trước trận</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Trên bề mặt thì mình có vẻ nắm lợi thế khá rõ về mặt tương khắc hệ, nhưng mình vẫn
+                                    khá lo sợ trước hai ngưỡng speed giữa Regieleki & Torkoal khiến cho việc câu Trick
+                                    Room phải được tính toán làm sao để có thể loại bỏ Regieleki trước khi hết Trick
+                                    Room.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- summary -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Tổng thuật</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Set đấu đầu diễn ra khá lợi thế dành cho mình khi Đạt quyết định lead & Dynamax
+                                    Regieleki từ sớm. Mặc dù mình có bị predict khá nhiều trong G1, nhưng với việc Đạt
+                                    tỏ ra thụ động trong việc đổi mon ép sân giúp mình có thể loại bỏ Regieleki từ sớm
+                                    và câu Trick Room khá dễ dàng. G2 với việc mình loại bỏ cả hai TR setter trong vòng
+                                    2 turn đấu đầu tiên, mọi thứ an bài ngay lập tức.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <!-- GF reset vs Kenn -->
+                    <div class="round">
+
+                        <table class="tourTable">
+                            <thead>
+                                <tr>
+                                    <th>Vòng</th>
+                                    <th>Kết quả</th>
+                                    <th>Đối thủ</th>
+                                    <th>Team</th>
+                                    <th>Paste</th>
+                                    <th>Video</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Grand Final<br />Reset</td>
+                                    <td>WLW</td>
+                                    <td>
+                                        Đạt Lương <br />
+                                        (Ken)
+                                    </td>
+                                    <td>
+                                        <p>
+                                            <img src="assets/img/calyrex-ice-rider.png" alt="Calyrex-I">
+                                            <img src="assets/img/mimikyu.png" alt="Mimikyu">
+                                            <img src="assets/img/regieleki.png" alt="Regieleki">
+                                            <img src="assets/img/indeedee-female.png" alt="Indeedee-F">
+                                            <img src="assets/img/trevenant.png" alt="Trevenant">
+                                            <img src="assets/img/torkoal.png" alt="Torkoal">
+                                        </p>
+                                    </td>
+                                    <td><i class="far fa-newspaper"></i></td>
+                                    <td><i class="fas fa-film"></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Game 1 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 1</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Mình vẫn lead Regieleki & Zacian như set trước vs Calyrex-I & Indeedee-F. Một pha
+                                    Shadow Ball + Glacial Lance có phần hơi gượng ép mở ra cơ hội để mình cấu Sash của
+                                    Indeedee và free switch cho Charizard vào và kết thúc G1.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Game 2 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 2</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Cả hai đều lead giống G1. Lần này Đạt đánh chuẩn chỉ hơn với việc set Trick Room
+                                    sớm. Mình đã mắc sai lầm ở việc để Regieleki của bản thân chết trong khi vẫn còn đó
+                                    Regieleki của Đạt. Kết quả là mình thua G2.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Game 3 -->
+                        <div class="accordion">
+                            <button class="accordion-btn">Game 3</button>
+                            <div class="accordion-content" style="max-height: 0px;">
+                                <p>
+                                    Mình quyết định chọn bài tẩy Whimsicott + Charizard vs Regieleki & Mimikyu. Nhiệm vụ
+                                    của Charizard chỉ là đánh được Wildfire một lần và nó đã làm được. Sau đó Zacian ra
+                                    và dọn dẹp hết phần còn lại. Đáng chỉ ra sai lầm của mình khi không Switcheroo lấy
+                                    đi Weakness Policy của Calyrex-I & quả hụt Wisps cực đáng tiếc của Đạt. Nhưng chuyện
+                                    gì xảy ra đã xảy ra, và mình đã giành được chiến thắng G3 và chung cuộc!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+
+                <hr class="divider-separator">
+                </hr>
+
+                <section class="conclusion">
+                    <h2 id="conclude">Lời Kết</h2>
+                    <p>
+                        Và qua chặng đường dài, cuối cùng mình cũng đã trở thành nhà vô địch đầu tiên của hệ thống Play!
+                        Pokémon Vietnam Circuit! Quả thật là chiến thắng mang nhiều ý nghĩa với mình và góp phần củng cố
+                        sự tự tin của mình kể từ khi khi tham gia vào VGC vào năm 2020!
+                    </p>
+                    <p>
+                        Mục tiêu đề ra cho năm 2022 của mình là vẫn luôn cải thiện bản thân làm một VGC player và mang
+                        lại nhiều bài viết hay để góp phần giúp nền VGC nước nhà vẫn luôn tiến bộ không ngừng.
+                    </p>
+                    <p>Cảm ơn mọi người đã đọc! Và chúc các bạn vui vẻ khi dùng team của mình!</p>
+                    <img src="assets/img/rental.jpg" alt="rental-code" style="max-width: 100%;">
+                </section>
             </div>
-          </div>
-        </div>
-      </div>
+        </section>
+
+
     </div>
-    <!-- Newsletter-area start -->
-    <div class="newsletter-l-11">
-      <div class="container">
-        <div class="row justify-content-center news-l-11-main-bg position-relative">
-          <div class="news-l-11-second-bg w-100 h-100"></div>
-          <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-11" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <div class="content text-center">
-              <h5>Try our free software!</h5>
-              <h2>Try our free software!</h2>
-              <p>We designed and tested prototypes that helped identify pain points in the account creation
-                process. Together, we shaped the new standard.</p>
-              <div class="btn-area">
-                <a href="#" class="btn"><i class="fas fa-download d-inline-block"></i> Download Free Trial</a>
-              </div>
-              <span>No credit card required</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Footer Area -->
-    <footer class="footer-l-11 text-center text-md-start">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="footer-logo-l-11">
-              <a href="#"><img src="image/logo/logo-black.png" alt="logo"></a>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="footer-widget-l-11">
-              <ul class="pl-0 list-unstyled d-flex flex-wrap justify-content-center align-items-end ">
-                <li class="d-flex"><a href="">About</a></li>
-                <li class="d-flex"><a href="">Features</a></li>
-                <li class="d-flex"><a href="">Works</a></li>
-                <li class="d-flex"><a href="">Career</a></li>
-                <li class="d-flex"><a href="">Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="social-icons-l-11">
-              <ul class="pl-0 list-unstyled d-flex  justify-content-center justify-content-md-end align-items-end ">
-                <li class="d-flex flex-column justify-content-center"><a href="#"><i
-                                    class="fab fa-twitter"></i></a></li>
-                <li class="d-flex flex-column justify-content-center"><a href="#"><i
-                                    class="fab fa-facebook-f"></i></a></li>
-                <li class="d-flex flex-column justify-content-center"><a href="#"><i
-                                    class="fab fa-google"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <div class="copyright-area-l-11">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <p>© Grayic 2021 All right reserved. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Vendor Scripts -->
-  <script src="js/vendor.min.js"></script>
-  <!-- Plugin's Scripts -->
-  <script src="./plugins/aos/aos.min.js"></script>
-  <script src="./plugins/slick/slick.min.js"></script>
-  <script src="./plugins/menu/menu.js"></script>
-  <!-- Activation Script -->
-  <script src="js/custom.js"></script>
 </body>
+<script>
+    $(".accordion").each(function (i) {
+        $(this).children("button").on("click", function (i) {
+            $(this).toggleClass("active")
+            var panel = $(this).next()
+            if ($(panel).css("maxHeight") != "0px") {
+                $(panel).css("maxHeight", "0px")
+            } else {
+                $(panel).css("maxHeight", $(panel)[0].scrollHeight + "px")
+            }
+        })
+    })
+</script>
 
 </html>
